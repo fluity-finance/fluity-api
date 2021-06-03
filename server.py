@@ -3,11 +3,13 @@ import json
 from brownie import Contract, network, project
 from flask import Flask
 from flask_caching import Cache
+from flask_cors import CORS
 
 
 # flask stuff
 cache = Cache(config={"CACHE_TYPE": "SimpleCache"})
 app = Flask(__name__)
+CORS(app)
 cache.init_app(app)
 
 # brownie stuff
