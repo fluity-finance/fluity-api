@@ -38,6 +38,7 @@ exclude = [
     "0x747b8E59F4B8D775F3404333Cf9B76Fe7b127e9C",  # Timelock
     "0x7C6f226db5401cdCC03434cdC02B6D5dB739FBe6",  # Team vesting lock-up
     "0xFdb73CEFb8A333642d65f025bACF5223922B8346",  # FLUSD/BUSD unipool, mining source
+    "0x48487FCD9BA40cEfA0c5B5cb87523Fd7429126AF",  # FLUSD/BUSD unipool for dodo, mining source
 ]
 multicall_data = [[str(flty), flty.balanceOf.encode_input(addr)] for addr in exclude]
 # insert a query on total burned from staking contract
